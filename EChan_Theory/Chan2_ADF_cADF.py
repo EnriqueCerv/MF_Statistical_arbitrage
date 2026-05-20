@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 START = '2024-05-09'
 END   = '2026-05-09' 
 
-df = yf.Ticker('EWS')
+df = yf.Ticker('AAPL')
 df = df.history(start=START, end=END)
 df['Return'] = df['Close'].pct_change()
 df = df.dropna()
